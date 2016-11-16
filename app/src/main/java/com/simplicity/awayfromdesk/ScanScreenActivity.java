@@ -46,7 +46,7 @@ public class ScanScreenActivity extends AppCompatActivity {
                 }
                 //Toast.makeText(this, "Received " + messagesReceivedArray.size() +
                 //" Messages", Toast.LENGTH_LONG).show();
-                //textView.setText(receivedArray[0].toString());
+                textView.setText(receivedArray[0].toString());
             }
             else {
                 textView.setText("Failed");
