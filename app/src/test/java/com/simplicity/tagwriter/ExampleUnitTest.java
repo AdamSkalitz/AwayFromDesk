@@ -1,4 +1,4 @@
-package com.simplicity.awayfromdesk;
+package com.simplicity.tagwriter;
 
 import org.junit.Test;
 

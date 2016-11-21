@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.simplicity.awayfromdesk">
+    package="com.simplicity.tagwriter">
 
     <uses-permission android:name="android.permission.NFC" />
     <uses-feature android:name="android.hardware.nfc" android:required="true"/>
+
 
     <application
         android:allowBackup="true"
@@ -15,13 +16,20 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.nfc.action.NDEF_DISCOVERED" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="text/plain" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ScanScreenActivity" />
-        <activity android:name=".SetStatus"></activity>
     </application>
+    &lt;manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.survivingwithandroid.nfc" &gt;
 
+    ....
+    &lt;intent-filter&gt;
+    &lt;action android:name="android.nfc.action.NDEF_DISCOVERED" /&gt;
+    &lt;category android:name="android.intent.category.DEFAULT" /&gt;
+    &lt;data android:mimeType="text/plain"/&gt;
+    &lt;/intent-filter&gt;
+    &lt;manifest&gt;
 </manifest>

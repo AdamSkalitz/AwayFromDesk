@@ -8,25 +8,40 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.simplicity.awayfromdesk.MainActivity">
+    tools:context="com.simplicity.tagwriter.MainActivity">
 
     <Button
-        android:id="@+id/button_scan"
+        android:id="@+id/button_set_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="@string/button_scan"
-        android:onClick="scan" />
-
-    <Button
-        android:id="@+id/buttons_set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="@string/button_set"
         android:onClick="set"
-        android:layout_marginLeft="52dp"
-        android:layout_marginStart="52dp"
-        android:layout_toRightOf="@+id/button_scan" />
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/textBox_set"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/textBox_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write status here"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/scan_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:width="300dp"
+        android:height="200dp"
+        android:layout_marginTop="95dp"
+        android:layout_below="@+id/button_set_status"
+        android:layout_alignLeft="@+id/textBox_set"
+        android:layout_alignStart="@+id/textBox_set" />
 
 </RelativeLayout>

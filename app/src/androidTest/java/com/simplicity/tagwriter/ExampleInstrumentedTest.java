@@ -1,4 +1,4 @@
-package com.simplicity.awayfromdesk;
+package com.simplicity.tagwriter;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.simplicity.awayfromdesk", appContext.getPackageName());
+        assertEquals("com.simplicity.tagwriter", appContext.getPackageName());
     }
 }
