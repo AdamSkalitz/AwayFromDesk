@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Away From Desk</string>
-    <string name="button_set">Set Status</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Help</string>
+    <string name="button_scan">Scan</string>
+    <string name="button_set">Set</string>
+    <string name="action_help">Help</string>
+    <string name="editText_timeaway_default">""</string>
 </resources>

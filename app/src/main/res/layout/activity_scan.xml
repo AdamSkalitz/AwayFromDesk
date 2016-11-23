@@ -7,24 +7,23 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.ksb12177.myapplication.MainActivity">
+    tools:context="com.example.ksb12177.myapplication.scan">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button_scan"
-        android:onClick="openScanActivity"
-        android:text="@string/button_scan"/>
+        android:text="pls place near to NFC card"/>
 
     <Button
+        android:text="Simulate Error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button_set"
-        android:text="@string/button_set"
-        android:onClick="openSetActivity"
-        android:layout_alignTop="@+id/button_scan"
-        android:layout_toRightOf="@+id/button_scan"
-        android:layout_toEndOf="@+id/button_scan"
-        android:layout_marginLeft="53dp"
-        android:layout_marginStart="53dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="113dp"
+        android:layout_marginStart="113dp"
+        android:onClick="simScanError"
+        android:id="@+id/button_sim_error" />
+
 </RelativeLayout>
